@@ -12,7 +12,12 @@ library(sf) # spatial analysis
 library(tigris) # geojoin
 library(leaflet) # interactive maps
 library(htmlwidgets) # interactive map labels
+library(shiny)
 
+### CREATE and SET WD
+if (!dir.exists('~/Desktop/R/Covid19')) {
+  dir.create('~/Desktop/R/Covid19')
+}
 setwd('~/Desktop/R/Covid19')
 
 ### IMPORT DATA
