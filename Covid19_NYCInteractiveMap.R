@@ -17,8 +17,8 @@ library(shiny)
 ### CREATE and SET WD
 if (!dir.exists('~/Desktop/R/Covid19')) {
   dir.create('~/Desktop/R/Covid19')
-}
-setwd('~/Desktop/R/Covid19')
+  setwd('~/Desktop/R/Covid19')
+} else {setwd('~/Desktop/R/Covid19')}
 
 ### IMPORT DATA
 download.file(url = 'https://github.com/nychealth/coronavirus-data/archive/master.zip',
